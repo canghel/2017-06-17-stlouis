@@ -11,7 +11,7 @@ humantime: "9:00 am - 5:00 pm"    # human-readable time (e.g., "9:00 am - 4:30 p
 startdate: 2017-06-17      # use YYYY-MM-DD format like 2015-01-01
 enddate: 2017-06-17        # use YYYY-MM-DD format like 2015-01-02
 instructor: ["Bo Ji", "Catalina Anghel"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: [""]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["n/a"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: "catalina.v.anghel@gmail.com"      # contact email address for workshop organizer, such as "grace@hopper.org"
 etherpad: http://pad.software-carpentry.org/2017-06-17-stlouis        # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
@@ -128,6 +128,7 @@ Participants should bring their laptops and plan to participate actively. By the
 
 <hr/>
 
+<h2>Etherpad</h2>
 <!--
   ETHERPAD
 
@@ -142,7 +143,7 @@ Participants should bring their laptops and plan to participate actively. By the
 -->
 {% if page.etherpad %}
 <p>
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+  <strong>Link:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
   <br/>
   We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
 </p>
@@ -157,9 +158,6 @@ Participants should bring their laptops and plan to participate actively. By the
   2' to be actual dates or days of the week.
 -->
 
-
-<h2>Preliminary Schedule</h2>
-
 <!-- DO NOT EDIT SURVEY LINKS -->
 <p><em>Surveys</em></p>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
@@ -169,7 +167,106 @@ Participants should bring their laptops and plan to participate actively. By the
 
 <div>
 
-<h2>Workshop overview</h2>
+<h2>Schedule</h2>
+</p>
+<div class="row">
+  <div class="col-md-6">
+    <h3>Day 1: 8:30AM - 5:00PM</h3>
+    <table class="table table-striped">
+      <tr>
+        <td colspan=2 style="background:gainsboro"><strong><em>8:00 - 8:30:</em></strong> Coffee & Sign In</td>
+      </tr>
+      <tr>
+        <td colspan=2 style="background:gainsboro"><strong>Morning:</strong> Intro, The Data, and The Cloud</td>
+      </tr>
+      <tr>
+          <td>
+              <a href="http://www.datacarpentry.org/2016-05-26-NIH/DataCarpentry_Intro.pdf">Intro to Data Carpentry</a>
+          </td>
+          <td>
+            Ryan
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <a href="http://www.datacarpentry.org/introduction-genomics/">Intro to Data</a>
+          </td>
+          <td>
+            Catalina
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/tidiness-genomics/">Genomics Data Tidyness</a>
+          </td>
+          <td>
+            Catalina
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/cloud-genomics/">Connecting to the Cloud in 5 Minutes or Less</a>
+          </td>
+          <td>
+            Ryan
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/r-genomics-2/00-intro-to-r-rstudio.html">RStudio Orientation</a>,
+                            <a href="https://jasonjwilliamsny.github.io/r-genomics-2/01-intro-to-r.html">Intro to R</a>
+          </td>
+          <td>
+            Ryan
+          </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://jasonjwilliamsny.github.io/r-genomics-2/02-intro-to-dataframes-metadata-r.html">Dataframes and Metadata</a>
+        </td>
+        <td>
+          Ryan
+        </td>
+      </tr>
+      <tr>
+        <td colspan=2 style="background:gainsboro"><strong>Afternoon:</strong> Shell, Project Setup, and Sequence QC </td>
+      </tr>
+      <tr>
+          <td>
+              <a href="http://www.datacarpentry.org/shell-genomics/lessons/">Using the Command Line (Shell)</a>
+          </td>
+          <td>
+            Catalina
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/importingdata-genomics/">Data Importing and Uploading</a>
+          </td>
+          <td>
+            Ryan
+          </td>
+        </tr>
+      <tr>
+        <td>
+          <a href="https://jasonjwilliamsny.github.io/organization-genomics/">Project Setup & Organization</a>
+        </td>
+        <td>
+          Catalina
+        </td>
+      </tr>
+        <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/wrangling-genomics/00-readQC.html" target="_blank">QC of Sequence Data</a>
+          </td>
+          <td>
+           Catalina
+         </td>
+      <tr>
+    </table>
+  </div>
+</div>
+
 
 <b>Module 1:</b>Data and project organization
 <ul>
