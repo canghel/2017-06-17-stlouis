@@ -10,10 +10,10 @@ humandate: "June 17, 2017"    # human-readable date (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am - 5:00 pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
 startdate: 2017-06-17      # use YYYY-MM-DD format like 2015-01-01
 enddate: 2017-06-17        # use YYYY-MM-DD format like 2015-01-02
-instructor: [""] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: [""]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: "info@datacarpentry.org"      # contact email address for workshop organizer, such as "grace@hopper.org"
-etherpad: http://pad.software-carpentry.org/2016-11-21-umn        # optional (insert the URL for your Etherpad if you're using one)
+instructor: ["Bo Ji", "Catalina Anghel"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["n/a"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: "catalina.v.anghel@gmail.com"      # contact email address for workshop organizer, such as "grace@hopper.org"
+etherpad: http://pad.software-carpentry.org/2017-06-17-stlouis        # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
 <!--
@@ -128,6 +128,7 @@ Participants should bring their laptops and plan to participate actively. By the
 
 <hr/>
 
+<h2>Etherpad</h2>
 <!--
   ETHERPAD
 
@@ -142,7 +143,7 @@ Participants should bring their laptops and plan to participate actively. By the
 -->
 {% if page.etherpad %}
 <p>
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+  <strong>Link:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
   <br/>
   We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
 </p>
@@ -157,11 +158,9 @@ Participants should bring their laptops and plan to participate actively. By the
   2' to be actual dates or days of the week.
 -->
 
-
-<h2>Preliminary Schedule</h2>
-
 <!-- DO NOT EDIT SURVEY LINKS -->
-<p><em>Surveys</em></p>
+<h2>Surveys</h2>
+
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 <p><a href='{{ site.dc_pre_survey }}'>Pre-workshop Survey</a></p>
 <p><a href='{{ site.dc_post_survey }}'>Post-workshop Survey</a></p>
@@ -169,52 +168,138 @@ Participants should bring their laptops and plan to participate actively. By the
 
 <div>
 
-<h2>Workshop overview</h2>
-
-<b>Module 1:</b>Data and project organization
-<ul>
-<li>Good practices for data and project organization
-</ul>
-
-<!--
-<a href="http://www.datacarpentry.org/introduction-genomics/00-workshop-overview.html">Workshop Introduction</a>
-
-<ul>
-<li><a href=https://tracykteal.github.io/introduction-genomics/00-workshop-overview.html>Overview of the workshop</a>
-<li><a href=https://tracykteal.github.io/introduction-genomics/01-intro-to-dataset.html>Introducing the dataset and questions</a>
-</ul>
-
-<b>Module 2</b> <a href=https://tracykteal.github.io/tidiness-genomics/>Data organization</a>
-<ul>
-<li>Think about and understand the types of data and metadata a sequencing experiment will generate
-<li>Gain a general understanding of data organization
-</ul>
--->
-
-
-<b>Module 2:</b>Using cloud computing for genomics
-<ul>
-<li>understand what cloud computing is and why it's useful
-<li>log in to remote computing resources
-</ul>
-
-<b>Module 3:</b>Introduction to the command line
-<ul>
-<li>learn commands for the command line
-<li>learn to navigate at the command line
-</ul>
-
-
-<b>Module 4:</b>Running bioinformatics programs and creating workflows
-<ul>
-<li>Quality Control of NGS Data
-<li>Automating a workflow
-</ul>
-
+<h2>Schedule</h2>
+</p>
+<div class="row">
+  <div class="col-md-6">
+    <h3>Morning: 9:00AM - 12:00PM</h3>
+    <table class="table table-striped">
+<!--       <tr>
+        <td colspan=2 style="background:gainsboro"><strong><em>8:30 - 9:00:</em></strong> Coffee & Sign In</td>
+      </tr> -->
+      <tr>
+        <td colspan=2 style="background:gainsboro"><strong>Module 1: </strong> Data and project organization</td>
+      </tr>
+<!--       <tr>
+        <td colspan=2 style="background:gainsboro">
+          <ul>
+            <li>Good practices for data and project organization
+          </ul>
+        </td>
+      </tr> -->
+      <tr>
+          <td>
+              <a href="http://www.datacarpentry.org/2016-05-26-NIH/DataCarpentry_Intro.pdf">Intro to Data Carpentry</a>
+          </td>
+          <td>
+            Bo
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <a href="http://www.datacarpentry.org/introduction-genomics/">Intro to Data</a>
+          </td>
+          <td>
+            Bo
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/tidiness-genomics/">Genomics Data Tidiness</a>
+          </td>
+          <td>
+            Bo
+          </td>
+      </tr>
+      <tr>
+        <td colspan=2 style="background:gainsboro"><strong>Module 2: </strong>Using cloud computing for genomics</td>
+      <tr>
+        <td colspan=2 style="background:gainsboro">
+          <ul>
+            <li>understand what cloud computing is and why it's useful
+            <li>log in to remote computing resources
+          </ul>
+        </td>
+      </tr>
+      <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/cloud-genomics/">Connecting to the Cloud in 5 Minutes or Less</a>
+          </td>
+          <td>
+            Bo
+          </td>
+      </tr>
+      <tr>
+        <td colspan=2 style="background:gainsboro"><strong>Module 3: </strong>Introduction to the command line</td>
+      <tr>
+      <!--   <td colspan=2 style="background:gainsboro">
+          <ul>
+            <li>learn commands for the command line
+            <li>learn to navigate at the command line
+          </ul>
+        </td> -->
+      </tr>
+      <tr>
+          <td>
+              <a href="http://www.datacarpentry.org/shell-genomics/lessons/">Using the Command Line (Shell)</a>
+          </td>
+          <td>
+            Bo 
+          </td>
+      </tr>
+      <tr>
+    </table>
+  </div>
 </div>
 
-<hr/>
-
+<div class="row">
+  <div class="col-md-6">
+    <h3>Afternoon: 1PM - 5:00PM</h3>
+    <table class="table table-striped">  
+        <tr>
+        <td colspan=2 style="background:gainsboro"><strong>Module 4: </strong>Running bioinformatics programs and creating workflows</td>
+<!--         <tr>
+        <td colspan=2 style="background:gainsboro">
+          <ul>
+            <li>Quality control of NGS Data
+            <li>Automating a workflow
+          </ul>
+        </td> -->
+      </tr>
+        <td>
+          <a href="https://jasonjwilliamsny.github.io/organization-genomics/">Project Setup & Organization</a>
+        </td>
+        <td>
+          Catalina
+        </td>
+      </tr>
+        <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/wrangling-genomics/00-readQC.html" target="_blank">QC of Sequence Data</a>
+          </td>
+          <td>
+           Catalina
+         </td>
+      <tr>
+      <tr>
+        <td>
+          <a href="https://jasonjwilliamsny.github.io/wrangling-genomics/01-automating_a_workflow.html" target="_blank">Automating Workflows</a>
+          </td>
+          <td>
+            Catalina
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://jasonjwilliamsny.github.io/wrangling-genomics/02-variant-calling-workflow.html" target="_blank">Variant Calling</a>
+          </td>
+          <td>
+            Catalina
+          </td>
+        </tr>
+    </table>
+  </div>
+</div>
 
 <!--
   SYLLABUS
